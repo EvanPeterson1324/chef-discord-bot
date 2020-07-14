@@ -12,7 +12,7 @@ app.get('/', (req, res) => res.status(OK).json({
   timestamp: new Date(),
 }));
 
-app.listen(PORT, () => console.log(`listening at http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`listening at port ${PORT}`));
 
 const client = new Discord.Client();
 
