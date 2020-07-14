@@ -1,7 +1,19 @@
 
 require('dotenv').config();
-
+const express = require('express');
 const Discord = require('discord.js');
+const { OK } = require('http-status');
+
+const app = express();
+const PORT = 3000;
+
+app.get('/', (req, res) => res.status(OK).json({
+  message: 'healthy!',
+  timestamp: new Date(),
+}));
+
+app.listen(PORT, () => console.log(`listening at http://localhost:${PORT}`));
+
 const client = new Discord.Client();
 
 client.on('ready', () => {
