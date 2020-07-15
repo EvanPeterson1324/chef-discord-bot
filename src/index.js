@@ -1,5 +1,5 @@
 
-require('dotenv').config();
+require('dotenv/config');
 const express = require('express');
 const Discord = require('discord.js');
 const { OK } = require('http-status');
