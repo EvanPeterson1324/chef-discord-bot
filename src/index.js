@@ -5,7 +5,7 @@ const Discord = require('discord.js');
 const { OK } = require('http-status');
 
 const app = express();
-const PORT = 3000;
+const { PORT } = process.env;
 
 app.get('/', (req, res) => res.status(OK).json({
   message: 'healthy!',
@@ -27,5 +27,3 @@ client.on('message', msg => {
 });
 
 client.login(process.env.DISCORD_TOKEN).catch(e => console.log(e.message));
-
-
