@@ -1,8 +1,8 @@
-require('dotenv/config');
-const express = require('express');
-const Discord = require('discord.js');
-const { OK } = require('http-status');
-const { parseMessageAndReply } = require('./services/botService');
+import 'dotenv/config';
+import express from 'express';
+import Discord from 'discord.js';
+import { OK } from 'http-status';
+import { parseMessageAndReply } from './services/botService';
 
 // Health check http route
 const app = express();

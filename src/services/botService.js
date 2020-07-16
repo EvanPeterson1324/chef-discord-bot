@@ -1,10 +1,6 @@
 
-const parseMessageAndReply = (message) => {
-  if (message.content === 'ping') {
-    message.channel.send('pong');
+export const parseMessageAndReply = (message) => {
+  if (message.content === '!chef') {
+    message.channel.send('initial command works as intended.');
   }
-};
-
-module.exports = {
-  parseMessageAndReply,
 };
