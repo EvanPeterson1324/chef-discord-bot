@@ -3,7 +3,7 @@ module.exports = {
     {
       script: "dist/index.js",
       name: "Chef-Bot",
-      instances: "max",
+      instances: "1",
       env: {
         NODE_ENV: "development",
         watch: "src/**",
